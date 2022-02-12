@@ -1,20 +1,29 @@
 {
-    "name": "00_citas_medicas",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "nodemon server.js"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "axios": "^0.25.0",
-        "chalk": "^4.1.2",
-        "express": "^4.17.2",
-        "moment": "^2.29.1",
-        "nodemon": "^2.0.15",
-        "uuid": "^8.3.2"
-    }
+  "name": "00_citas_medicas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "chalk": "^4.1.2",
+    "express": "^4.17.2",
+    "moment": "^2.29.1",
+    "nodemon": "^2.0.15",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliopalma/citasmedicas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/juliopalma/citasmedicas/issues"
+  },
+  "homepage": "https://github.com/juliopalma/citasmedicas#readme",
+  "description": ""
 }

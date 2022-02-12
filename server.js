@@ -20,14 +20,14 @@ async function getdatosUsuarios(usuarios) {
         let tiempo = moment().format('MMMM Do YYYY, hh:MM:SS a');
         let id = uuid.v4();
         id = id.substr(id.length - 6);
-        retorno.push(`Nombre:${usuario.name.first} - Apellido: ${usuario.name.last} - ID: ${id} - Timestamp: ${tiempo}`);
+        retorno.push(chalk.blue.bgWhite(`Nombre:${usuario.name.first} - Apellido: ${usuario.name.last} - ID: ${id} - Timestamp: ${tiempo}`));
     }
 
     return retorno;
 
 }
 
-app.listen(3002, async() => {
+app.listen(3003, async() => {
 
     usuarios = await axios.get("https://randomuser.me/api/?results=10");
 
@@ -36,6 +36,6 @@ app.listen(3002, async() => {
 
     console.log(usuarios);
 
-    console.log(chalk.blue.bgWhite("Escuchando en el puerto 3002"));
-    console.log("Ejemplo de identificador único", uuid.v4());
+    console.log("Escuchando en el puerto 3002");
+    console.log(chalk.blue.bgWhite("Ejemplo de identificador único", uuid.v4()));
 });
